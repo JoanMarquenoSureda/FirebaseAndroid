@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustPan|adjustResize"
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
+
+    <!-- EditText para Marca Vehicle -->
+    <EditText
+        android:id="@+id/editTextMarcaVehicle"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Marca Vehicle"
+        android:gravity="center"
+        android:background="@drawable/rounded_edittext_bg"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextCognom"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMatricula"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <!-- AutoCompleteTextView para Matricula -->
+    <AutoCompleteTextView
+        android:id="@+id/editTextMatricula"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Matricula"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:background="@drawable/rounded_edittext_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <!-- EditText para Teléfono -->
+    <EditText
+        android:id="@+id/editTextTelefon"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:hint="Telefon"
+        android:gravity="center"
+        android:inputType="phone"
+        android:background="@drawable/rounded_edittext_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextModelVehicle"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCognom"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- EditText para Model Vehicle -->
+    <EditText
+        android:id="@+id/editTextModelVehicle"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Model Vehicle"
+        android:inputType="textPersonName"
+        android:background="@drawable/rounded_edittext_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMarcaVehicle"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <!-- EditText para Cognom -->
+    <EditText
+        android:id="@+id/editTextCognom"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Cognom"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:background="@drawable/rounded_edittext_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextMarcaVehicle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNom"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <!-- EditText para Nom -->
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Nom"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:background="@drawable/rounded_edittext_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextMatricula"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <!-- Botón para Afegir -->
+    <Button
+        android:id="@+id/buttonAfegir"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="264dp"
+        android:text="Afegir"
+        android:background="@color/colorButtonBackground"
+        android:textColor="@color/colorButtonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <!-- Botón para Consultar -->
+    <Button
+        android:id="@+id/buttonConsultar"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:background="@color/colorButtonBackground"
+        android:text="Consultar"
+        android:textColor="@color/colorButtonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <!-- TextView para PARKING -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="123dp"
+        android:layout_height="39dp"
+        android:text="PARKING"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTitleText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="351dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Botón para Modificar -->
+    <Button
+        android:id="@+id/buttonModificar"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="16dp"
+        android:text="Modificar"
+        android:background="@color/colorButtonBackground"
+        android:textColor="@color/colorButtonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonConsultar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

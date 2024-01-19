@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "572896631958",
+    "firebase_url": "https://activitat2uf02-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "activitat2uf02",
+    "storage_bucket": "activitat2uf02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572896631958:android:3b19e86fe24aeab28c76b7",
+        "android_client_info": {
+          "package_name": "com.example.activitat2uf02"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfbBcYjguQUK_PN8TrEVWY746qBdFXp4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
